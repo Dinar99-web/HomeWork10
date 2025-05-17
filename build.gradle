@@ -8,7 +8,7 @@ version '1.0-SNAPSHOT'
 
 allure {
     report {
-        version.set("2.19.0")
+        version.set("2.30.0")
     }
     adapter { // отвечает за появление папочки build/allure-results
         aspectjWeaver.set(true) //обработка аннотации @Step
@@ -27,8 +27,9 @@ repositories {
 dependencies {
     testImplementation(
             'org.junit.jupiter:junit-jupiter-api:5.9.0',
-            'com.codeborne:selenide:6.7.2',
-            'io.qameta.allure:allure-selenide:2.19.0'
+            'com.codeborne:selenide:7.7.3',
+            'io.qameta.allure:allure-selenide:2.19.0',
+            'io.github.bonigarcia:webdrivermanager:5.8.0'
     )
 
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.9.0')
